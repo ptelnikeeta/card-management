@@ -1,4 +1,4 @@
-## Steps
+## Steps to initial setup
 
 - Clone Repo
     ```bash
