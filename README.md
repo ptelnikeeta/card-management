@@ -38,3 +38,19 @@
     php artisan storage:link
 
     ```
+    
+## Demo Screens
+
+- Create
+
+    ![Create](https://github.com/ptelnikeeta/card-management/blob/master/public/readme-images/screenshot-local.card-management.com-create.png)
+- List
+
+    ![List](https://github.com/ptelnikeeta/card-management/blob/master/public/readme-images/screenshot-local.card-management.com-list.png)
+
+- View
+
+    ![View](https://github.com/ptelnikeeta/card-management/blob/master/public/readme-images/screenshot-local.card-management.com-view.png)
+- Edit
+
+    ![Edit](https://github.com/ptelnikeeta/card-management/blob/master/public/readme-images/screenshot-local.card-management.com-edit.png)
