@@ -38,6 +38,14 @@
     php artisan storage:link
 
     ```
+- Clear Config Cache
+    ```bash
+    php artisan config:cache
+    php artisan route:clear
+    php artisan view:clear
+    php artisan cache:clear
+    php artisan optimize:clear
+    ```
     
 ## Demo Screens
 
