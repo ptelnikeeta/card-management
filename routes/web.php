@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return redirect()->route('cards');
 });
+
+Route::get('card/{slug?}',"App\Http\Controllers\CardController@index")->name('card');
+Route::get('cards/{id?}',"App\Http\Controllers\CardController@cards")->name('cards');
+Route::post('card-create-submit',"App\Http\Controllers\CardController@cardCreateSubmit")->name('cardCreateSubmit');
+Route::post('card-edit-submit/{id}',"App\Http\Controllers\CardController@cardEditSubmit")->name('cardEditSubmit');
