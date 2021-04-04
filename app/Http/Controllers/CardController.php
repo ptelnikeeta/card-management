@@ -120,6 +120,24 @@ class CardController extends Controller
         }
     }
 
+    public function cardDelete($id=null){
+        $card=null;
+        if($id){
+            $this->model_key = 'id';
+            $this->model_id = $id;
+            $card=$this->get();
+            if($card==null){
+                abort(404);
+            }else{
+                //dd(get_class_methods($card));
+                $delete = $card->delete();
+                return redirect()->route('cards');
+            }
+        }else{
+            abort(404);
+        }
+    }
+
     public function createSlug($title, $id = 0)
     {
         $slug = Str::slug($title);

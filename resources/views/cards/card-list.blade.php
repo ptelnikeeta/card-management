@@ -52,6 +52,7 @@
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <a href="{{route('cards',["id"=>$cardData['id']])}}" type="button" class="btn btn-primary">Edit</a>
                         <a href="{{route('card',["slug"=>$cardData['slug']])}}" type="button" class="btn btn-primary">View</a>
+                        <a href="{{route('cardDelete',["id"=>$cardData['id']])}}" type="button" class="btn btn-primary">Delete</a>
                     </div>
                 </td>
             </tr>

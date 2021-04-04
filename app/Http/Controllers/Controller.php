@@ -34,6 +34,11 @@ class Controller extends BaseController
         return $this->updateAction($data);
     }
 
+    /*public function delete()
+    {
+        return $this->deleteAction();
+    }*/
+
     protected function createAction($data){
         $model = $this->getModelObject();
         foreach ($data as $k=>$v){
@@ -53,6 +58,12 @@ class Controller extends BaseController
         $model = $this->getModelObject();
         return $model::where([$this->model_key => $this->model_id])->update($data);
     }
+
+    /*protected  function deleteAction(){
+        $model = $this->getModelObject();
+        $result = $model::where($this->model_key, $this->model_id)->delete();
+        return $result;
+    }*/
 
     protected function validate(){
         $validator = Validator::make($this->data,$this->data_validator,$this->data_validator_messages);

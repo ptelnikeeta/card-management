@@ -22,3 +22,4 @@ Route::get('card/{slug?}',"App\Http\Controllers\CardController@index")->name('ca
 Route::get('cards/{id?}',"App\Http\Controllers\CardController@cards")->name('cards');
 Route::post('card-create-submit',"App\Http\Controllers\CardController@cardCreateSubmit")->name('cardCreateSubmit');
 Route::post('card-edit-submit/{id}',"App\Http\Controllers\CardController@cardEditSubmit")->name('cardEditSubmit');
+Route::get('card/delete/{id}','App\Http\Controllers\CardController@cardDelete')->name('cardDelete');
